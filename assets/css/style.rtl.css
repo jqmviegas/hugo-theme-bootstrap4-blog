@@ -149,8 +149,9 @@ figure {
   margin: 0 0 1rem;
 }
 img {
-  vertical-align: middle;
-  border-style: none;
+    vertical-align: middle;
+    border-style: solid;
+    border-color: #eee;  
 }
 svg {
   overflow: hidden;
@@ -309,7 +310,7 @@ h2 {
 }
 .h3,
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 .h4,
 h4 {
@@ -440,6 +441,8 @@ pre {
   display: block;
   font-size: 87.5%;
   color: #212529;
+  background-color: #eee;
+  padding: .5em;
 }
 pre code {
   font-size: inherit;
@@ -6172,8 +6175,9 @@ h6 a:hover {
 }
 .blog-title {
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400;
+  padding-top: 1rem;
 }
 .blog-description {
   font-size: 1.1rem;
@@ -6181,7 +6185,8 @@ h6 a:hover {
 }
 @media (min-width: 40em) {
   .blog-title {
-    font-size: 3.5rem;
+    font-size: 1rem;
+    padding-top: 1rem;
   }
 }
 .sidebar-module {
@@ -6208,7 +6213,7 @@ h6 a:hover {
 }
 .blog-post-title {
   margin-bottom: 0.25rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .blog-post-meta {
   margin-bottom: 1.25rem;
