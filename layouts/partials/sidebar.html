@@ -6,17 +6,20 @@
   </section>
   {{ end }}
 
+  {{ if .Site.Params.sidebar }}
+      {{ partialCached "recent.html" .}}
+  {{ end }}
+
+  {{ with .Site.Menus.sidebar }}
   <section class="sidebar-module">
     <h4>{{ i18n "links" }}</h4>
     <ol class="list-unstyled">
-      <li><a href="{{ .Site.BaseURL | absURL }}">Landing page</a></li>
-      {{ with .Site.Menus.sidebar }} {{ range . }}
+      {{ range . }}
       <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
       {{ end }}
     </ol>
   </section>
   {{ end }}
-</aside>
-<!-- /.blog-sidebar -->
+</aside><!-- /.blog-sidebar -->
 
 {{- /* vim: set ts=2 sw=2 et: */}}
